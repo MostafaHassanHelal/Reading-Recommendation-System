@@ -35,6 +35,8 @@ class ReadingIntervalsRequest extends FormRequest
     {
         $errors = $validator->errors()->all();
 
-        throw new HttpResponseException(response()->json(['errors' => $errors], 422));
+        throw new HttpResponseException(response()->json([
+            'status' => 'failed',
+            'errors' => $errors], 422));
     }
 }
