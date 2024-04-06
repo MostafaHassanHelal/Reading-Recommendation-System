@@ -19,9 +19,6 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
     ];
-    protected $attributes = [
-        'mobile'
-    ];
     
     //TODO: Add the mobile attribute to database
     public function getMobileAttribute()
