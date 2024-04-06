@@ -9,4 +9,9 @@ class Book extends Model
 {
     use HasFactory;
     protected $fillable = ['name', 'unique_intervals_list', 'read_pages_count'];
+
+    public function getUniqueIntervalsListAttribute()
+    { 
+        return json_decode($this->attributes['unique_intervals_list'], true);
+    }
 }
