@@ -7,6 +7,7 @@ This application recommends books to users based on their reading habits and pre
 ## Getting Started
 
 To start the application:-
+
 1- copy `.env.example` file to `.env` file
 
 2- run the following commands:
