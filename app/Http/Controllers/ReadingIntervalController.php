@@ -23,5 +23,6 @@ class ReadingIntervalController extends Controller
         CalculateUniqueIntervalsJob::dispatch($new_interval, $book);
         
         return response()->json(['message' => 'Reading interval created successfully'], 201);
-    }   
+    }  
+
 }
