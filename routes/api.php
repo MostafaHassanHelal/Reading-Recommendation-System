@@ -5,4 +5,4 @@ use App\Http\Controllers\ReadingIntervalController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/reading-interval', [ReadingIntervalController::class,'store']);
-Route::get('/recommende-books', [BookController::class,'getRecommendedBooks']);
+Route::get('/recommended-books', [BookController::class,'getRecommendedBooks']);
